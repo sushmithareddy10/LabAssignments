@@ -13,11 +13,12 @@ public class PositiveString {
 		char alpha[]=  {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
 		
 		//Scanning input from User
+		System.out.println("Enter the String :");
 		String string=sc.nextLine();
 		
 		//calling checkString method
-		boolean t=checkString(string,alpha);
-		if(t) {
+		boolean truth=checkString(string,alpha);
+		if(truth) {
 			System.out.println("Positive String");
 		}
 		else {
@@ -26,7 +27,7 @@ public class PositiveString {
 		
 
 	}
-    //Checking where the given String is Positive String or not
+    //Checking whether the given String is Positive String or not
 	private static boolean checkString(String string, char alpha[]) {
 		int index=0;
 		int count=0;
